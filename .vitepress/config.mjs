@@ -8,21 +8,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'UC1 Dashboard', link: '/uc1dashboard/' }
+      { text: 'UC1 Dashboard', link: '/uc1dashboard/' },
+      { text: 'Stories', link: '/stories/' },
+      { text: 'Editor', link: '/editor/' }
     ],
-
-    /*sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],*/
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
   }
 })

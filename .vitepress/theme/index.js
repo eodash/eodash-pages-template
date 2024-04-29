@@ -11,7 +11,12 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  async enhanceApp({ app, router, siteData }) {
+    if (!import.meta.env.SSR) {
+      const jsonform = await import('@eox/jsonform');
+      app.use(jsonform);
+      const plugin = await import('@eox/storytelling');
+      app.use(plugin);
+    }
   }
 }
