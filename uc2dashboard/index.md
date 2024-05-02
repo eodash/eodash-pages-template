@@ -7,4 +7,4 @@ layout: page
     import '../dist/style.css'
 </script>
 
-<eo-dash config="/configs/firstconfig.js"/>
+<eo-dash config="/configs/secondconfig.js"/>
