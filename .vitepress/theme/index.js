@@ -13,10 +13,13 @@ export default {
   },
   async enhanceApp({ app, router, siteData }) {
     if (!import.meta.env.SSR) {
+      import('@eodash/eodash/webcomponent.css');
+      const eodash = await import('@eodash/eodash/webcomponent');
+      app.use(eodash);
       const jsonform = await import('@eox/jsonform');
       app.use(jsonform);
-      const plugin = await import('@eox/storytelling');
-      app.use(plugin);
+      const storytelling = await import('@eox/storytelling');
+      app.use(storytelling);
     }
   }
 }

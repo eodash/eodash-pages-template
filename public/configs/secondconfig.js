@@ -14,6 +14,20 @@ export default {
         }
     },
     template: {
+        loading: {
+            id: Symbol(),
+            type: "web-component",
+            widget: {
+                link: "https://cdn.jsdelivr.net/npm/ldrs/dist/auto/mirage.js",
+                tagName: "l-mirage",
+                properties: {
+                    class: "align-self-center justify-self-center",
+                    size: "120",
+                    speed: "2.5",
+                    color: "#a34b20"
+                }
+            }
+        },
         background: {
             id: Symbol(),
             type: "internal",
