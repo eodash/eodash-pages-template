@@ -2,5 +2,8 @@
 layout: page
 ---
 
+<script setup>
+import { withBase } from 'vitepress'
+</script>
 
-<eo-dash config="/configs/firstconfig.js"/>
+<eo-dash :config="withBase('/configs/firstconfig.js')"/>

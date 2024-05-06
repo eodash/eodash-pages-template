@@ -3,6 +3,7 @@ layout: page
 ---
 <script setup>
     import { data } from './config.data.js';
+    import { withBase } from 'vitepress'
     let storyid, storyurl;
     if ('URLSearchParams' in window) {
         const searchParams = new URLSearchParams(window.location.search);
@@ -13,7 +14,7 @@ layout: page
     }
 </script>
 
-<eox-storytelling v-if="storyurl" :markdown-url=storyurl></eox-storytelling>
+<eox-storytelling v-if="storyurl" :markdown-url=withBase(storyurl)></eox-storytelling>
 <div v-else>
     <h2 style="font-size: 40px; height: 50px; margin: 20px;"> Story gallery </h2>
     <div v-for="key in Object.keys(data)">
