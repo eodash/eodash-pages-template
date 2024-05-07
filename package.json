@@ -5,7 +5,7 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "@eodash/eodash": "^5.0.0-alpha.2",
+    "@eodash/eodash": "^5.0.0-alpha.2.1",
     "@eox/jsonform": "^0.6.2",
     "@eox/storytelling": "^0.6.0",
     "vitepress": "^1.1.3",

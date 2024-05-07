@@ -6,4 +6,4 @@ layout: page
     import { withBase } from 'vitepress'
 </script>
 
-<eo-dash :config="withBase('/configs/firstconfig.js')"/>
+<eo-dash style="height:calc(100dvh - 64px)" :config="withBase('/configs/firstconfig.js')"/>
