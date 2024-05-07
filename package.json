@@ -6,8 +6,8 @@
   },
   "devDependencies": {
     "@eodash/eodash": "^5.0.0-alpha.2",
-    "@eox/jsonform": "^0.6.1",
-    "@eox/storytelling": "latest",
+    "@eox/jsonform": "^0.6.2",
+    "@eox/storytelling": "^0.6.0",
     "vitepress": "^1.1.3",
     "vue": "^3.4.21"
   }

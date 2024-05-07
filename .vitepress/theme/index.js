@@ -2,6 +2,7 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import '@eodash/eodash/webcomponent.css'
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -13,7 +14,6 @@ export default {
   },
   async enhanceApp({ app, router, siteData }) {
     if (!import.meta.env.SSR) {
-      import('@eodash/eodash/webcomponent.css');
       const eodash = await import('@eodash/eodash/webcomponent');
       app.use(eodash);
       const jsonform = await import('@eox/jsonform');
