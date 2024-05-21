@@ -12,10 +12,13 @@ layout: page
         storyid = searchParams.get('storyid');
         if (storyid && storyid in data) {
             storyurl = data[storyid].file;
-            console.log(storyurl);
         }
     }
 
 </script>
 
-<eox-storytelling v-if="storyurl" :markdown-url="withBase(storyurl)"></eox-storytelling>
+<eox-storytelling 
+    v-if="storyurl" 
+    :markdown-url="withBase(storyurl)"
+    style="overflow-y: auto; height: calc(var(--vh, 2vh) * 100);">
+</eox-storytelling>
