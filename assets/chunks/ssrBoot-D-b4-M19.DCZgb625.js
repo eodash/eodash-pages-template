@@ -1,1 +1,0 @@
-import{w as t,v as i,X as n,aH as a}from"./eo-dash.DEvp2YjU.js";function r(){const o=t(!1);return i(()=>{window.requestAnimationFrame(()=>{o.value=!0})}),{ssrBootStyles:n(()=>o.value?void 0:{transition:"none !important"}),isBooted:a(o)}}export{r as i};
