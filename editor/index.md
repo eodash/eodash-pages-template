@@ -6,5 +6,6 @@ layout: page
         top: 50px!important;
     }
 </style>
-<eox-storytelling style="margin-top: 50px;" markdown="## Start your journey here!" show-editor></eox-storytelling>
-
+<ClientOnly>
+    <eox-storytelling show-editor="open" style="margin-top: 50px;" markdown="## Start your journey here!"></eox-storytelling>
+</ClientOnly>

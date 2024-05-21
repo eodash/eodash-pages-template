@@ -18,6 +18,8 @@ export default {
       app.use(eodash);
       const jsonform = await import('@eox/jsonform');
       app.use(jsonform);
+      const eoxmap = await import('@eox/map');
+      app.use(eoxmap);
       const storytelling = await import('@eox/storytelling');
       app.use(storytelling);
     }
