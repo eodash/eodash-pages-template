@@ -18,4 +18,4 @@ layout: page
 
 </script>
 
-<eox-storytelling v-if="storyurl" :markdown-url="storyurl"></eox-storytelling>
+<eox-storytelling v-if="storyurl" :markdown-url="withBase(storyurl)"></eox-storytelling>
