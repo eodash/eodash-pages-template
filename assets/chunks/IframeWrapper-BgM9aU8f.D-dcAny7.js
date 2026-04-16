@@ -1,0 +1,1 @@
+import{o as r,c as t}from"./framework.i7-_cabo.js";const c=["src"],o={__name:"IframeWrapper",props:{src:{type:String,required:!0}},setup(e){return(s,a)=>(r(),t("iframe",{src:e.src,class:"fill-height fill-width"},null,8,c))}};export{o as default};
