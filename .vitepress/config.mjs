@@ -4,6 +4,16 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "eodash Pages Template",
   description: "This is a template example of how to setup eodash within a VitePress environment",
+  vite: {
+    envPrefix: ["VITE_", "EODASH_"]
+  },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (el) => el.includes('-')
+      }
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

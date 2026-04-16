@@ -1,8 +1,6 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
-import './style.css'
-import '@eodash/eodash/webcomponent.css'
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -14,14 +12,21 @@ export default {
   },
   async enhanceApp({ app, router, siteData }) {
     if (!import.meta.env.SSR) {
-      const eodash = await import('@eodash/eodash/webcomponent');
-      app.use(eodash);
-      const jsonform = await import('@eox/jsonform');
-      app.use(jsonform);
-      const eoxmap = await import('@eox/map');
-      app.use(eoxmap);
-      const storytelling = await import('@eox/storytelling');
-      app.use(storytelling);
+      await import('./style.css');
+      await import('@eodash/eodash/webcomponent');
+      await import("@eox/storytelling");
+      await import("@eox/layout");
+      await import("@eox/itemfilter");
+      await import ("@eox/map");
+      await import ("@eox/chart");
+      await import ("@eox/map/src/plugins/advancedLayersAndSources");
+      await import ("@eox/drawtools");
+      await import ("@eox/jsonform");
+      await import ("@eox/stacinfo");
+      await import ("@eox/layercontrol");
+      await import ("color-legend-element");
+      await import ("@eox/timecontrol");
+      await import ("@eox/ui");
     }
   }
 }
