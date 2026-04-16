@@ -1,35 +1,36 @@
 export default {
   id: "app2",
-  stacEndpoint: "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
+  stacEndpoint:
+    "https://esa-eodashboards.github.io/eodashboard-catalog/trilateral/catalog.json",
   brand: {
-        noLayout:true,
-        name: 'runtime config 2',
-        font: { family: "Noto Sans" },
-        theme: {
-            colors: {
-                primary: "#AE9537",
-                surface: "#f2f4f3",
-                secondary: "#AE9537"
-            }
-        }
+    noLayout: true,
+    name: "runtime config 2",
+    font: { family: "Noto Sans" },
+    theme: {
+      colors: {
+        primary: "#003247",
+        secondary: "#00ae92",
+        surface: "#ffff",
+      },
     },
+  },
   templates: {
     light: {
       gap: 16,
       loading: {
-            id: Symbol(),
-            type: "web-component",
-            widget: {
-                link: "https://cdn.jsdelivr.net/npm/ldrs/dist/auto/mirage.js",
-                tagName: "l-mirage",
-                properties: {
-                    class: "align-self-center justify-self-center",
-                    size: "120",
-                    speed: "2.5",
-                    color: "#a34b20"
-                }
-            }
+        id: Symbol(),
+        type: "web-component",
+        widget: {
+          link: "https://cdn.jsdelivr.net/npm/ldrs/dist/auto/mirage.js",
+          tagName: "l-mirage",
+          properties: {
+            class: "align-self-center justify-self-center",
+            size: "120",
+            speed: "2.5",
+            color: "#a34b20",
+          },
         },
+      },
       background: {
         id: "background-map-light",
         type: "internal",
@@ -47,7 +48,7 @@ export default {
             btnsPosition: {
               x: "12/9/10",
               y: 1,
-              gap: 32
+              gap: 32,
             },
           },
         },
